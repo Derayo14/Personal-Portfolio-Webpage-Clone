@@ -88,14 +88,41 @@ header a {
 }
 
 @media screen and (max-width:412px) {
+
     header {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 30%;
+        height: 50vh;
+        margin-left: 0em;
+        margin-right: 0em;
+        padding: 2em;
+        position: absolute;
+        top:5%;
+        right:0;
+        
+    } 
+    
+   .navBar {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 0em;
     }
+    .socialBar {
+        display: flex;
+        gap: 1em;
+        margin-right: 0em;
+    }
+
+
     .hambrgerImg{
         display: flex;
         justify-content: end;
         /* background-color: red; */
     }
+    
 
     .profileContainer {
         display: flex;
