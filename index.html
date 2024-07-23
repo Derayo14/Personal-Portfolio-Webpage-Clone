@@ -13,22 +13,25 @@
 
 <body>
     <header>
-        <div class="menuBar navBar">
-            <a href="#">Home</a>
-            <a href="#">Case Studies</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Recent Works</a>
-            <a href="#">Get In Touch</a>
+        <div class="hamburgerImg" id="toggle-button">
+            <i class="fa-solid fa-bars"></i>
         </div>
-        <div class="socialBar">
-            <i class="fa-brands fa-linkedin-in"><a href="#"></a></i>
-            <i class="fa-brands fa-behance"><a href="#"></a></i>
-            <i class="fa-brands fa-twitter"><a href="#"></a></i>
+        <div class="navs">
+            <div class="menuBar navBar">
+                <a href="#">Home</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Recent Works</a>
+                <a href="#">Get In Touch</a>
+            </div>
+            <div class="socialBar">
+                <i class="fa-brands fa-linkedin-in"><a href="#"></a></i>
+                <i class="fa-brands fa-behance"><a href="#"></a></i>
+                <i class="fa-brands fa-twitter"><a href="#"></a></i>
+            </div>
         </div>
     </header>
-    <div class="hambrgerImg">
-        <i class="fa-solid fa-bars"></i>
-    </div>
+
     <div class="profileContainer">
         <div class="profileText">
             <h1>Your Name Here</h1>
@@ -56,6 +59,15 @@
 
         </div>
     </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const menu = document.querySelector('.navs');
+    
+        toggleButton.addEventListener('click', () => {
+          menu.classList.toggle('mobile-navbar');
+        });
+      </script>
 </body>
 
 </html>

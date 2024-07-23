@@ -3,11 +3,17 @@ body {
     color: #9C9C9C;
 
 }
-.hambrgerImg{
+
+header a {
+    text-decoration: none;
+    color: #9C9C9C;
+}
+
+.hambrgerImg {
     display: none;
 }
 
-header {
+.navs {
     background-color: #1B1B1B;
     display: flex;
     justify-content: space-between;
@@ -23,10 +29,7 @@ header {
     margin-left: 5em;
 }
 
-header a {
-    text-decoration: none;
-    color: #9C9C9C;
-}
+
 
 .socialBar {
     display: flex;
@@ -88,8 +91,12 @@ header a {
 }
 
 @media screen and (max-width:412px) {
+    .navs{
+        display: none;
+    }
 
-    header {
+    .mobile-navbar {
+        background-color: #1B1B1B;
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -99,30 +106,31 @@ header a {
         margin-right: 0em;
         padding: 2em;
         position: absolute;
-        top:5%;
-        right:0;
-        
-    } 
-    
-   .navBar {
+        top: 5%;
+        right: 0;
+
+    }
+
+    .navBar {
         display: flex;
         flex-direction: column;
         gap: 1em;
         margin-left: 0em;
     }
+
     .socialBar {
         display: flex;
         gap: 1em;
-        margin-right: 0em;
+        margin-top: 10em;
     }
 
 
-    .hambrgerImg{
+    .hamburgerImg {
         display: flex;
         justify-content: end;
         /* background-color: red; */
     }
-    
+
 
     .profileContainer {
         display: flex;
